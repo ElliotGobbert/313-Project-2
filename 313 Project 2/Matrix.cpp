@@ -82,6 +82,14 @@ public:
 			cout << "Invalid insert location\n";
 		}
 	}
+	void insert(int* values) {
+		for (int row = 0; row < m_rows; row++) {
+			for (int col = 0; col < m_cols; col++) {
+				int valuesIndex = (row * m_cols) + col;
+				m_matrix[row][col] = values[valuesIndex];
+			}
+		}
+	}
 	void fill(int value) {
 		for (int row = 0; row < m_rows; row++) {
 			for (int col = 0; col < m_cols; col++) {
@@ -185,17 +193,23 @@ private:
 	}
 };
 
-
 int main() {
-	Matrix test(3, 3);
-	Matrix test2(6, 6);
-	test2.fill(6);
-	test.fill(2);
-	test.dump("test");
-	test2.dump("test2");
-	test * (test + 2);
-	test2 + test;
-	test.dump("test");
-	test2.dump("test2");
+	int a[] = { 6,4,8,3 };
+	int b[] = { 1,2,3,4,5,6 };
+	int c[] = { 2,4,6,1,3,5 };
+	Matrix A(2, 2);
+	A.insert(a);
+	Matrix B(2, 3);
+	B.insert(b);
+	Matrix C(2, 3);
+	C.insert(c);
+	A.dump("A");
+	B.dump("B");
+	C.dump("C");
+
+	Matrix D(1,1);
+	D = (A + (B + 3)) * C;
+	D.dump("D");
+
 	return 0;
 }
