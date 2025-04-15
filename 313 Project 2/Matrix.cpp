@@ -208,7 +208,8 @@ int main() {
 	C.dump("C");
 
 	Matrix D(1,1);
-	D = (A + (B + 3)) * C;
+	D = (A + (B + 3));
+	D = D * C;
 	D.dump("D");
 
 	return 0;
