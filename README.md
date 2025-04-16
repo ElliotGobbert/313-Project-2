@@ -39,12 +39,12 @@ Each version includes hardcoded test matrices in main().
 
 Operations tested:
 
-    Initialization
-
-    Insertion from arrays
-
-    Addition (matrix + matrix, matrix + scalar)
-
+    Initialization   
+    
+    Insertion from arrays   
+    
+    Addition (matrix + matrix, matrix + scalar)   
+    
     Multiplication (matrix * matrix, matrix * scalar)
 
 Results are printed to the console to visually confirm correctness.
