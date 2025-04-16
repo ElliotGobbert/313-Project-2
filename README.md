@@ -51,8 +51,11 @@ Results are printed to the console to visually confirm correctness.
   
 
  ADDITIONAL INFORMATION:
+ 
  Matrix multiplication follows standard dot product rules (rows × columns).
+ 
  Only integer matrices are supported.
+ 
  Invalid operations (e.g., size mismatches) are gracefully handled with error messages.
 
   
