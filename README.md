@@ -1,5 +1,7 @@
 AUTHORING: Elliot Gobbert; UMBC; CMSC 313; 4/16/2025
+
 PURPOSE OF SOFTWARE: This program provides a basic implementation of matrix operations in both C and C++, including initialization, element insertion, addition, scalar operations, and dot-product-based matrix multiplication. It demonstrates how similar functionality can be achieved in procedural C and object-oriented C++.
+
 FILES: 
 matrix.c
 - C version of the program, includes main() and matrix operations using structs and functions.
